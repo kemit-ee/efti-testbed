@@ -1,0 +1,21 @@
+[book]
+title = "eFTI Testbed"
+description = "A shared, safe place to test eFTI implementations before they go live."
+authors = ["KeMIT"]
+language = "en"
+src = "src"
+
+[build]
+build-dir = "../_site"
+create-missing = false
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+site-url = "/efti-testbed/"
+git-repository-url = "https://github.com/kemit-ee/efti-testbed"
+default-theme = "light"
+preferred-dark-theme = "navy"
+additional-css = ["theme/custom.css"]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]

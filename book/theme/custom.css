@@ -1,0 +1,29 @@
+/* Book-wide tweaks. Palette (also used in diagram classDefs):
+   partner #1E88E5 (blue) | testbed #00897B (teal) | counterparty #FB8C00 (orange)
+   trust #8E24AA (purple) | stop/risk #E53935 (red) | neutral #78909C (grey) */
+
+.content main { max-width: 80%; }
+
+/* Make diagrams breathe and centre them */
+pre.mermaid, .mermaid {
+  text-align: center;
+  margin: 2rem auto;
+  background: transparent;
+}
+
+/* Callout boxes: write as blockquotes starting with a bold label */
+blockquote {
+  border-inline-start: 4px solid #1E88E5;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+/* "At a glance" card grid: <div class="cards"><div class="card">…</div></div> */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.card { border: 1px solid #cfd8dc; border-top: 5px solid #1E88E5; border-radius: 8px; padding: 0.9rem 1.1rem; }
+.card h4 { margin-top: 0; }
+.card.teal { border-top-color: #00897B; }
+.card.orange { border-top-color: #FB8C00; }
+.card.purple { border-top-color: #8E24AA; }
+.card.red { border-top-color: #E53935; }
